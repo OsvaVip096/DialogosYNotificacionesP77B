@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnInfo_click"
+        android:text="@string/dialogo_informativo" />
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnList_click"
+        android:text="@string/dialogo_con_lista" />
+
+    <Button
+        android:id="@+id/btnListCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnListCheckBox_click"
+        android:text="@string/dialogo_con_checklist" />
+
+    <Button
+        android:id="@+id/btnTimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnTimePicker_click"
+        android:text="@string/time_picker_dialog" />
+
+    <Button
+        android:id="@+id/btnDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnDatePicker_click"
+        android:text="@string/date_picker_dialog" />
+
+    <Button
+        android:id="@+id/btnNoficacionBarra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnNoficacionBarra_click"
+        android:text="@string/notifacion_en_barra_de_tareas" />
+
+    <Button
+        android:id="@+id/btnNS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnNS_click"
+        android:text="@string/notificacion_simple" />
+
+    <Button
+        android:id="@+id/btnAM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnAL_click"
+        android:text="@string/agendar_alarma" />
+
+</LinearLayout>

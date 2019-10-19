@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Dialogos y Notificaciones P77B</string>
+    <string name="dialogo_informativo">Dialogo Informativo</string>
+    <string name="dialogo_con_lista">Dialogo con lista</string>
+    <string name="dialogo_con_checklist">Dialogo con CheckList</string>
+    <string name="notofocacion_en_barra_de_tareas">Notofocacion en barra de tareas</string>
+    <string name="time_picker_dialog">Time Picker Dialog</string>
+    <string name="date_picker_dialog">Date Picker Dialog</string>
+    <string name="notifacion_en_barra_de_tareas">Notifacion en barra de tareas</string>
+    <string name="notificacion_simple">Notificacion Simple</string>
+    <string name="agendar_alarma">Agendar Alarma</string>
+</resources>
