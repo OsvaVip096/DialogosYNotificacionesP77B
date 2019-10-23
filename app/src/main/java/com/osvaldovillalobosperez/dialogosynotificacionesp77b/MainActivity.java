@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     String[] frutas = new String[]{"Sandia", "Mango", "Fresa", "Melon"};
     String[] generos_musicales = new String[]{"Rock", "Rap", "Clásica", "Pop", "Jazz"};
     boolean[] check_list = new boolean[]{true, false, true, false, true};
+    AlarmManager alarmManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -167,14 +168,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void btnAL_click(View view) {
-        AlarmManager am = (AlarmManager) getSystemService(ALARM_SERVICE);
+        alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
 
-        Intent intent = new Intent(getApplicationContext(), PlanaficarAlarma.class);
+        Intent receiver = new Intent(this, PlanificarAlarma.class);
         PendingIntent pi =
-                PendingIntent.getBroadcast(getApplicationContext(), 0, intent, 0);
+                PendingIntent.getBroadcast(this, 0, receiver, 0);
 
-        am.setRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,
-                10000,
-                5 * 1000, pi);
+        alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,
+                5000,
+                1000, pi);
     }
 }

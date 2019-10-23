@@ -10,7 +10,7 @@ import android.widget.Toast;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
-public class PlanaficarAlarma extends BroadcastReceiver {
+public class PlanificarAlarma extends BroadcastReceiver {
     private String CHANNEL_ID = "CANALID";
 
     @Override
